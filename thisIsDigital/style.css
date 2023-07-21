@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* targetting navBar */
+#nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 40px;
+    /* background-color: red; */
+}
+
+/* targetting nav's h1 */
+#nav > h1 {
+    font-size: 31px;
+    font-weight: 100;
+}
+
+#nav #part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* targetting nav's anchor links */
+#nav #part2 a {
+    text-decoration: none;
+    color : #222;
+    margin : 20px;
+}
+
+/* targetting anchor last link in the navbar */
+#nav #part2 a:nth-last-child(1){
+    /* background-color: rebeccapurple; */
+    padding : 7px 18px;
+    /* text-align: center; */
+    border: 1px solid #000;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* targetting last anchor link green div */
+#nav #part2 a:nth-last-child(1) #green {
+    height: 100%;
+    width: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* applying transition */
+    transition: left 0.4s ease ;
+}
+
+/* Applying hover effect on the anchor's last link #green */
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+
+/* applying styles to h5 of the last list to be visible over green color*/
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 200;
+    position: relative;
+    z-index: 1;
+}
+/* NAVIGATION SECTION STYLING END */
+
+
+/* MAIN BODY STYLING BELOW */
+/* Targetting the main heading  */
+#main > h1 {
+    font-size: 5.4vw;
+    /* background-color: red; */
+    width: 60%;
+    text-align: center;
+    font-weight: 100;
+    /* text-transform: uppercase; */
+    /* for the underline image */
+    position: relative;
+
+    /* in order to make the h1 visible over the image */
+    z-index: 1;
+}
+
+/* applying the image below the heading in the main */
+#main > h1::after{
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    left: 50%;
+    bottom: -5%;
+    background-size: cover;
+    transform: translate(-50% , 0);
+}
+
+/* targetting main's image */
+#main img {
+    transition: margin 0.8s ease;
+}
+
+/* adding hover effect on the main's image */
+#main img:hover{
+    margin-top: -10px;
+}
+
+/* targetting the img1 in the main section */
+#main #img1{
+    height: 400px;
+    width: 260px;
+    position: absolute;
+    left: 6%;
+    top : 20%;
+}
+
+/* targetting the img2 in the main section */
+#main #img2{
+    height: 220px;
+    width: 250px;
+    position: absolute;
+    right: 25%;
+    top : 18%;
+}
+
+/* targetting the img3 in the main section */
+#main #img3{
+    height: 210px;
+    width: 200px;
+    position: absolute;
+    right: 7%;
+    bottom : 6%;
+}
