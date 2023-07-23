@@ -1,0 +1,46 @@
+@font-face {
+    font-family: head;
+    src: url(./Heading-Now-Variable.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;   /*as text was getting outside of the div*/
+}
+
+/* styling the h1 */
+#page1 h1 {
+    font-size: 40vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: head;
+    white-space: nowrap;    /*will be in same line*/
+    font-stretch: 250%; /*for stretching will not work on every font*/
+    font-weight: 999;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
